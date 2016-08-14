@@ -4,5 +4,12 @@
     <string name="app_name">ExpressPartner</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    <string name="main_send_express_text">寄快递</string>
+    <string name="main_franchisees_text">特约加盟</string>
+    <string name="main_order_text">我的订单</string>
+    <string name="main_advertisement_text">广告加盟</string>
+    <string name="main_platform_software_text">实用平台</string>
+    <string name="main_platform_news_text">平台动态</string>
 
 </resources>

@@ -17,5 +17,33 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
         <item name="android:windowNoTitle">true</item>
     </style>
+    
+    <!-- 主界面每一行线性布局样式 -->
+    <style name="main_linear">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <!-- 主界面大按钮布局的样式 -->
+    <style name="main_linear_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <!-- 主界面大按钮内部文字样式 -->
+    <style name="main_linear_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
 </resources>

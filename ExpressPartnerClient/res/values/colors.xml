@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+<!--     <color name="window_bg">#ffeef1f3</color> -->
+<!--     <color name="transparent">#00000000</color> -->
+<!--     <color name="white">#ffffff</color> -->
+<!--     <color name="black">#000000</color> -->
+<!--     <color name="red">#ff0000</color> -->
+<!--     <color name="commons_gray_txt_color">#666</color> -->
+    
+    <!-- 主界面大按钮颜色 -->
+    <color name="main_gradient_one_normal">#5D9CEC</color>
+    <color name="main_gradient_one_pressed">#87CEFA</color>
+    
+    <color name="main_gradient_two_normal">#65CC33</color>
+    <color name="main_gradient_two_pressed">#32CD32</color>
+    
+    <color name="main_gradient_three_normal">#4FC0E8</color>
+    <color name="main_gradient_three_pressed">#00BFFF</color>
+    
+    <color name="main_gradient_four_normal">#FE9900</color>
+    <color name="main_gradient_four_pressed">#FFD700</color>
+    
+    <color name="main_gradient_five_normal">#EE5567</color>
+    <color name="main_gradient_five_pressed">#FF6347</color>
+    
+    <color name="main_gradient_six_normal">#FF679A</color>
+    <color name="main_gradient_six_pressed">#F08080</color>
+    
+</resources>

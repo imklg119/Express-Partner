@@ -2,14 +2,186 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_purple"
-        android:clipToPadding="true"
-        android:fitsSystemWindows="true"
-        android:text="@string/hello_world" />
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/maintop_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" >
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/main_pager01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="matrix"
+                    android:src="@drawable/main_image_page_now" />
+
+                <ImageView
+                    android:id="@+id/main_pager02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/main_image_page" />
+
+                <ImageView
+                    android:id="@+id/main_pager03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/main_image_page" />
+
+                <ImageView
+                    android:id="@+id/main_pager04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/main_image_page" />
+
+                <ImageView
+                    android:id="@+id/main_pager05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="matrix"
+                    android:src="@drawable/main_image_page" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 大按钮布局 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/main_linear" >
+
+            <LinearLayout
+                style="@style/main_linear_style"
+                android:background="@drawable/gradient_send_express_selector"
+                android:onClick="sendExpress" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_express" />
+
+                <TextView
+                    style="@style/main_linear_text_style"
+                    android:text="@string/main_send_express_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/main_linear_style"
+                android:background="@drawable/gradient_franchisees_selector"
+                android:onClick="franchisees" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_franchisees" />
+
+                <TextView
+                    style="@style/main_linear_text_style"
+                    android:text="@string/main_franchisees_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/main_linear" >
+
+            <LinearLayout
+                style="@style/main_linear_style"
+                android:background="@drawable/gradient_order_selector"
+                android:onClick="order" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_order" />
+
+                <TextView
+                    style="@style/main_linear_text_style"
+                    android:text="@string/main_order_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/main_linear_style"
+                android:background="@drawable/gradient_advertisement_selector"
+                android:onClick="advertisement" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_advertisement" />
+
+                <TextView
+                    style="@style/main_linear_text_style"
+                    android:text="@string/main_advertisement_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/main_linear" >
+
+            <LinearLayout
+                style="@style/main_linear_style"
+                android:background="@drawable/gradient_platform_software_selector"
+                android:onClick="platformSoftware" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_platform_software" />
+
+                <TextView
+                    style="@style/main_linear_text_style"
+                    android:text="@string/main_platform_software_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/main_linear_style"
+                android:background="@drawable/gradient_platform_news_selector"
+                android:onClick="platformNews" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/main_platform_news" />
+
+                <TextView
+                    style="@style/main_linear_text_style"
+                    android:text="@string/main_platform_news_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
