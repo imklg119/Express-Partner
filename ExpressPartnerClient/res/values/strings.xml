@@ -11,5 +11,9 @@
     <string name="main_advertisement_text">广告加盟</string>
     <string name="main_platform_software_text">实用平台</string>
     <string name="main_platform_news_text">平台动态</string>
+    
+    <string name="send_from">出发地</string>
+    <string name="send_to">目的地</string>
+    <string name="submit">提交</string>
 
 </resources>

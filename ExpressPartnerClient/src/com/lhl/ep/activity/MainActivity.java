@@ -100,7 +100,7 @@ public class MainActivity extends BaseActivity {
 	 * 寄快递
 	 */
 	public void sendExpress(View v) {
-		// startActivity(new Intent(this, ExpressAddrActivity.class));
+		startActivity(new Intent(this, ExpressAddrActivity.class));
 	}
 
 	/**
